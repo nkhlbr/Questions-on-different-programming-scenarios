@@ -1,0 +1,15 @@
+
+#1 How to change the language shown in the repository
+
+Changing the Repo Language Shown
+Now that we know the background of how GitHub determines the repository language, I’ll show you how to change the language shown using gitattributes.
+
+Create a .gitattributes file in your repo at the top-level
+Edit the file and add the below line, subbing in the language(s) you want ignored denoted by its file extension before linguist-detectable=false. Since I want HTML ignored, I’ve included HTML below.
+*.html linguist-detectable=false
+Add, commit, and push the changes
+
+And voila, the language is changed to JavaScript!
+
+
+#2
